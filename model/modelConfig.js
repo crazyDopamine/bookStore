@@ -1,0 +1,49 @@
+var Sequelize = require('sequelize');
+
+var room = {
+    field:{
+        title:{
+            type:Sequelize.STRING(1000),
+            defaultValue:'',
+            allowNull:false
+        },
+        room:{
+            type:Sequelize.STRING(1000),
+            defaultValue:'',
+            allowNull:false
+        },
+        address:{
+            type:Sequelize.STRING(1000),
+            defaultValue:'',
+            allowNull:false
+        },
+        user:{
+            type:Sequelize.STRING(1000),
+            defaultValue:''
+        },
+        price:{
+            type:Sequelize.STRING(1000),
+            defaultValue:'',
+            allowNull:false
+        },
+        time:{
+            type:Sequelize.STRING(1000),
+            defaultValue:'',
+            allowNull:false
+        },
+        url:{
+            type:Sequelize.STRING(1000),
+            defaultValue:'',
+            allowNull:false
+        },
+        source:{
+            type:Sequelize.STRING,
+            defaultValue:'',
+            allowNull:false
+        }
+    }
+}
+
+module.exports={
+    room:room
+}
